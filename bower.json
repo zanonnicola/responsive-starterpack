@@ -1,0 +1,29 @@
+{
+  "name": "Boilerplate",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "1.9.1",
+    "modernizr": "latest",
+    "picturefill": "~1.2.1"
+  },
+  "authors": [
+    "zanonnicola <nicola.zanon86@gmail.com>"
+  ],
+  "description": "Starting out a new project",
+  "keywords": [
+    "boilerplate",
+    "js",
+    "css"
+  ],
+  "license": "MIT",
+  "homepage": "www.nicola-zanon.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ]
+}
