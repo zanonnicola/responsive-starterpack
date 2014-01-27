@@ -1,0 +1,11 @@
+@import "mixin.scss";
+@import "compass/css3";
+@import "bits.scss";
+
+
+//@media screen and (min-width:0\0) { 
+   	//IE9 and IE10 
+//}
+
+// Remove the dotted outline of select boxes in Firefox
+select:-moz-focusring { color: transparent; }

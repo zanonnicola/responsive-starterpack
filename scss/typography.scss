@@ -1,0 +1,64 @@
+@import "compass/css3";
+@import "bits.scss";
+@import "mixin.scss";
+
+/* @font-face {
+    font-family: 'Arimo';
+    src: url('../fonts/arimo-bold-webfont.eot');
+    src: url('../fonts/arimo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/arimo-bold-webfont.woff') format('woff'),
+         url('../fonts/arimo-bold-webfont.ttf') format('truetype'),
+         url('../fonts/arimo-bold-webfont.svg#arimobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+} */
+
+
+$headers-font-stack: "Arimo", Arial, Helvetica, sans-serif !default;
+$text-font-stack: "aleo", Georgia, serif !default;
+$line-height: 1.3;
+$paragraphSize: em(19.099);
+
+body {
+	font-family: $text-font-stack;
+  line-height: $line-height;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headers-font-stack;
+  color: $headerColor;
+}
+a {
+    text-decoration: none;
+    color: $linkColor;
+    @include transition(opacity, 0.4s, ease-in-out);
+    &:hover, &:focus {
+        @include opacity(0.6);
+    }
+}
+*:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    tap-highlight-color: rgba(0,0,0,0);
+}
+.lt-ie9 a:hover {
+    text-decoration: underline;
+}
+p {
+    font-size:  em(17);
+    color: $textColor;
+    @include breakpoint(tablet) {
+        font-size:  $paragraphSize;    
+    }
+}
+.capital {
+  float: left;
+  font-size: 3em;
+  line-height: 1;
+  padding: 0 0.2em 0 0;
+}

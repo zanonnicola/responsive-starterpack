@@ -1,0 +1,21 @@
+@import "compass/support";
+
+$experimental-support-for-microsoft: true;
+$legacy-support-for-ie: true;
+
+
+// Color
+
+$borderColor: #d8d8d8;
+$linkColor: #443d3d;
+$headerColor: #443d3d;
+$lightGray: #9d8e8e;
+$textColor: lighten(#000, 40%);
+$disable: lighten(#000, 70%);
+
+// Layout
+
+$spacer: em(25.888);
+$sectionSpacer: em(80.900);
+$sectionSpacer-m: em(30.902);	
+$padding: 2%;
